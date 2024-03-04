@@ -5,7 +5,7 @@ const cron = require("node-cron");
 // WebClient instantiates a client that can call API methods
 // When using Bolt, you can use either `app.client` or the `client` passed to listeners.
 const client = new WebClient(
-  "xoxb-5133325616753-5207395393319-9bcA1Ih0Ch1E4vVQqJ16nyNB",
+  "your-token",
   {
     // LogLevel can be imported and used to make debugging simpler
     logLevel: LogLevel.DEBUG,
@@ -18,9 +18,9 @@ member_ids = [];
 const { App } = require("@slack/bolt");
 
 const app = new App({
-  token: "xoxb-5133325616753-5207395393319-9bcA1Ih0Ch1E4vVQqJ16nyNB",
+  token: "your-token",
   appToken:
-    "xapp-1-A056LCHK5N0-5222004234530-939f28031de7e612e6f91aaeb38fb2a9ea17b09536446ec561d2c4a8c4933725",
+    "your-app-token",
   socketMode: true,
 });
 
